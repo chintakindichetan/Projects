@@ -8,7 +8,7 @@ computer = random.choice(possible_actions)
 
 print(f"\nYou chose {user}, computer chose {computer}.\n")
 
-if user== computer_action:
+if user== computer:
     print(f"Both players selected {user}. It's a tie!")
 elif user == "rock":
     if computer == "scissors":
