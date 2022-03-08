@@ -2,7 +2,6 @@ import numpy
 board=numpy.array([['_','_','_'],['_','_','_'],['_','_','_']])
 p1='x'
 p2='o'
-
 def check_r(symbol):
     for i in range(3):
         count=0
@@ -24,6 +23,7 @@ def check_c(symbol):
             print(symbol,'won')
             return True
     return False
+    
 def check_d(symbol):
     if board[0][2]==board[1][1] and board[1][1]==board[2][0] and board[1][1]==symbol:
         print(symbol,'won')
